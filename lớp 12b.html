@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinh Hoạt Chào Xuân - 12B Kinh Môn II</title>
+    <style>
+        :root {
+            --tet-red: #d32f2f;
+            --tet-gold: #ffca28;
+            --bg-cream: #fffdf0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-cream);
+            margin: 0;
+            padding: 20px;
+            color: #222;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: white;
+            border: 10px double var(--tet-red);
+            padding: 40px;
+            position: relative;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 140px;
+            z-index: 10;
+            mix-blend-mode: multiply; 
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: var(--tet-red);
+            text-transform: uppercase;
+            font-size: 2.8em;
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 5px solid var(--tet-gold);
+            display: inline-block;
+            font-weight: 800;
+        }
+
+        .content-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .section-header {
+            background-color: var(--tet-red);
+            color: white;
+            padding: 15px;
+            font-size: 1.6em;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .content-cell {
+            padding: 30px;
+            border: 2px solid var(--tet-gold);
+            vertical-align: top;
+            text-align: justify;
+            font-size: 1.25em; /* Chữ to rõ ràng */
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 10px 0;
+        }
+
+        .photo-item {
+            width: 100%;
+            border: 3px solid var(--tet-gold);
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .photo-item img, .photo-item video {
+            width: 100%;
+            height: 250px; 
+            object-fit: cover;
+            display: block;
+        }
+
+        .footer-cell {
+            text-align: center;
+            background-color: #fff9c4;
+            color: var(--tet-red);
+            padding: 40px;
+        }
+
+        p { margin-bottom: 20px; text-indent: 40px; }
+        .no-indent { text-indent: 0 !important; }
+        .decor { text-align: center; font-size: 35px; margin: 15px 0; }
+        
+        #bg-music { display: none; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            .photo-gallery { grid-template-columns: 1fr 1fr; }
+            .content-cell { font-size: 1.1em; padding: 20px; }
+            .logo { width: 90px; }
+        }
+    </style>
+</head>
+<body onclick="playMusicOnce()">
+
+    <audio id="bg-music" loop>
+        <source src="22.mp4" type="audio/mp4">
+    </audio>
+
+    <div class="container">
+        <img src="2.PNG" alt="Logo 12B Kinh Môn II" class="logo">
+
+        <header>
+            <h1>Chào Xuân Ấm Áp - Lớp 12B</h1>
+            <div class="decor">🌸 🧧 🏮 🧧 🌸</div>
+        </header>
+
+        <table class="content-table">
+            <tr>
+                <td colspan="2" class="section-header">Lời Giới Thiệu</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="content-cell">
+                    <p>Kính thưa thầy/cô giáo chủ nhiệm cùng toàn thể các bạn thân mến,</p>
+                    <p>Khi những cành đào, cành mai bắt đầu khoe sắc, khi không khí se lạnh của mùa xuân len lỏi khắp mọi nơi, đó cũng là lúc chúng ta biết rằng Tết cổ truyền của dân tộc đang đến rất gần. Tết Nguyên Đán không chỉ là dịp lễ lớn nhất trong năm của người Việt Nam mà còn là thời điểm để mỗi người chúng ta nhìn lại một năm đã qua, trân trọng những điều đã đạt được, và hướng tới những mục tiêu, ước mơ trong năm mới.</p>
+                    <p>Hôm nay, trong không khí rộn ràng và ấm áp này, lớp chúng ta tổ chức buổi sinh hoạt chào xuân với mong muốn tạo nên những kỷ niệm đẹp, tăng thêm sự gắn kết giữa các thành viên trong lớp, đồng thời mang lại niềm vui trước khi bước vào kỳ nghỉ Tết. Đây cũng là dịp để chúng ta tạm gác lại những áp lực học tập, cùng nhau tận hưởng những giây phút vui vẻ bên thầy/cô và bạn bè.</p>
+                </td>
+            </tr>
+
+            <tr style="height: 25px;"></tr>
+
+            <tr>
+                <td class="section-header" style="width: 50%;">Hoạt động sinh hoạt</td>
+                <td class="section-header" style="width: 50%;">Ý nghĩa chương trình</td>
+            </tr>
+            <tr>
+                <td class="content-cell">
+                    <div class="no-indent">
+                        Trong chương trình ngày hôm nay, lớp chúng ta sẽ có nhiều hoạt động ý nghĩa và thú vị như:
+                        <ul style="margin-top: 10px;">
+                            <li>Trang trí lớp học mang đậm không khí ngày Tết với hoa đào, hoa mai, câu đối đỏ.</li>
+                            <li>Các tiết mục văn nghệ mừng xuân do chính các bạn trong lớp biểu diễn.</li>
+                            <li>Trò chơi dân gian vui nhộn giúp mọi người thêm gắn kết và tiếng cười.</li>
+                            <li>Phần trao quà hoặc lì xì tượng trưng để chúc nhau may mắn trong năm mới.</li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="content-cell">
+                    <p class="no-indent">Thông qua những hoạt động này, chúng ta không chỉ cảm nhận được không khí Tết mà còn hiểu hơn về những giá trị truyền thống tốt đẹp của dân tộc — đó là sự đoàn kết, yêu thương và sẻ chia.</p>
+                </td>
+            </tr>
+
+            <tr style="height: 25px;"></tr>
+
+            <tr>
+                <td colspan="2" class="section-header">Khoảnh Khắc Kỉ Niệm</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="content-cell">
+                    <div class="photo-gallery">
+                        <div class="photo-item"><img src="3.PNG" alt="Kỉ niệm 1"></div>
+                        <div class="photo-item">
+                            <video controls><source src="10.mp4" type="video/mp4"></video>
+                        </div>
+                        <div class="photo-item"><img src="4.PNG" alt="Kỉ niệm 2"></div>
+                        <div class="photo-item"><img src="5.PNG" alt="Kỉ niệm 3"></div>
+                        <div class="photo-item">
+                            <video controls><source src="11.mp4" type="video/mp4"></video>
+                        </div>
+                        <div class="photo-item"><img src="6.PNG" alt="Kỉ niệm 4"></div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr style="height: 25px;"></tr>
+
+            <tr>
+                <td colspan="2" class="section-header">Thông Điệp Năm Mới</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="content-cell">
+                    <p>Nhân dịp năm mới sắp đến, em xin thay mặt tập thể lớp gửi lời cảm ơn chân thành đến thầy/cô — người đã luôn tận tình giảng dạy, dìu dắt và đồng hành cùng chúng em trong suốt thời gian qua. Chúng em kính chúc thầy/cô luôn mạnh khỏe, hạnh phúc, tràn đầy nhiệt huyết và tiếp tục gặt hái nhiều thành công trong sự nghiệp trồng người cao quý.</p>
+                    <p>Đối với các bạn trong lớp, chúc cho tất cả chúng ta bước sang năm mới với thật nhiều niềm vui, sức khỏe dồi dào, học tập ngày càng tiến bộ, thi cử đạt kết quả cao và luôn giữ được tinh thần đoàn kết, giúp đỡ nhau cùng phát triển. Mong rằng sau kỳ nghỉ Tết, chúng ta sẽ quay trở lại trường với năng lượng tích cực hơn, quyết tâm hơn để chinh phục những mục tiêu phía trước.</p>
+                    <p>Tết là thời khắc của sự khởi đầu, của hy vọng và của những điều tốt đẹp. Hy vọng rằng mỗi chúng ta sẽ có một mùa Tết thật ý nghĩa bên gia đình, người thân và bạn bè, lưu giữ những khoảnh khắc hạnh phúc để làm động lực cho chặng đường tiếp theo.</p>
+                </td>
+            </tr>
+
+            <tr style="height: 25px;"></tr>
+
+            <tr>
+                <td colspan="2" class="section-header">Lời Kết</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="content-cell footer-cell">
+                    <div class="no-indent" style="font-size: 1.3em; line-height: 2;">
+                        Cuối cùng, em xin kính chúc thầy/cô và tất cả các bạn:<br>
+                        <strong style="color: #b71c1c; font-size: 1.2em;">
+                            🌸 Năm mới an khang thịnh vượng<br>
+                            🌸 Vạn sự như ý<br>
+                            🌸 Sức khỏe dồi dào<br>
+                            🌸 Học tập thành công
+                        </strong>
+                        <p style="margin-top: 20px;" class="no-indent">Chúc buổi sinh hoạt Tết của lớp chúng ta diễn ra thật vui vẻ và ý nghĩa.</p>
+                        <p style="font-size: 1.1em; font-style: italic;" class="no-indent">Em xin chân thành cảm ơn! 🎆</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function playMusicOnce() {
+            var audio = document.getElementById("bg-music");
+            audio.play().catch(function(error) {
+                console.log("Chờ tương tác để phát nhạc...");
+            });
+        }
+    </script>
+
+</body>
+</html>
